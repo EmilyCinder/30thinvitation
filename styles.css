@@ -221,8 +221,8 @@ button.submit-btn:hover {
 
 /* Footer Section */
 footer {
-    background-color: #f7b731; /* Yellow background for the footer */
-    padding: 20px;
+    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;  /* Yellow background for the footer */
+    padding: 60px;
     text-align: center;
     color: white; /* White text for better contrast */
 }
