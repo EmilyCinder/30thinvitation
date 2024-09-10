@@ -84,13 +84,12 @@ form {
 }
 
 /* Event Details Section */
-/* Event Details Section */
 .details {
     background-color: #f7b731;
     padding: 75px;
-    text-align: left; /* Align text to the left */
-    display: flex; /* Use flexbox to align content */
-    justify-content: space-evenly; /* Space between the event details and image */
+    text-align: left;
+    display: flex;
+    justify-content: space-between; /* Flexbox to handle left and right alignment */
     align-items: center;
 }
 
@@ -100,12 +99,12 @@ form {
 }
 
 .details-image {
-    max-width: 50%; /* Adjust image width */
-    margin-left: auto; /* Push the image further to the right */
+    max-width: 45%; /* Adjust image width */
+    margin-left: 20px; /* Add space between text and image */
 }
 
 .details-image img {
-    width: 95%; /* Make the image responsive */
+    width: 100%; /* Make the image responsive */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
 }
@@ -114,6 +113,7 @@ form {
     .details {
         flex-direction: column; /* Stack details and image vertically on smaller screens */
         text-align: center; /* Center-align text on smaller screens */
+        padding: 50px; /* Adjust padding for smaller screens */
     }
 
     .details-content, .details-image {
@@ -126,6 +126,11 @@ form {
     }
 }
 
+@media (max-width: 480px) {
+    .details {
+        padding: 30px 20px; /* Further reduce padding for mobile screens */
+    }
+}
 
 /* Carousel Section with 3D Effect */
 .carousel-section {
@@ -201,9 +206,41 @@ form {
     }
 }
 
+@media (max-width: 768px) {
+    .wrapper {
+        width: 250px; /* Adjust width for smaller screens */
+        height: 160px;
+    }
+
+    .slide {
+        width: 250px;
+        height: 160px;
+    }
+
+    .carousel-section {
+        padding: 100px 0; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+        height: 150px;
+    }
+
+    .slide {
+        width: 100%;
+        height: 150px;
+    }
+
+    .carousel-section {
+        padding: 50px 0; /* Further reduce padding for mobile */
+    }
+}
+
 /* RSVP Form Section */
 .rsvp {
-    background-color: #f7b731; /* Solid purple background */
+    background-color: #f7b731;
     padding: 150px 0;
     position: relative;
     z-index: 1;
@@ -212,10 +249,10 @@ form {
 form {
     max-width: 600px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.5); /* Increase the opacity for less transparency */
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     padding: 40px 40px;
-    backdrop-filter: blur(10px); /* Frosted glass blur effect */
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -261,10 +298,10 @@ button.submit-btn:hover {
 
 /* Footer Section */
 footer {
-    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;  /* Background for the footer */
+    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;
     padding: 60px;
     text-align: center;
-    color: white; /* White text for better contrast */
+    color: white;
 }
 
 footer p {
