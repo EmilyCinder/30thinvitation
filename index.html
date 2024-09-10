@@ -14,7 +14,7 @@
     <div class="hero-content">
       <h1>You've Unlocked Joyce's 30th Birthday Invitation!</h1>
       <p>Welcome to Joyce's Exclusive Party in Vegas!</p>
-      <a href="#rsvp" class="btn">RSVP Now</a>
+      <a href="#rsvp" class="btn">RSVP Now</a> 
     </div>
   </section>
 
@@ -42,26 +42,29 @@
   
   
   
-
-  <!-- RSVP Form Section -->
   <section id="rsvp" class="rsvp">
-    <h2>RSVP</h2>
     <form>
-      <label for="name">Name:</label>
+      <h2>RSVP</h2>
+      <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
-
-      <label for="guests">Number of Guests:</label>
-      <input type="number" id="guests" name="guests" min="1" required>
-
-      <label for="diet">Dietary Restrictions:</label>
-      <input type="text" id="diet" name="diet">
-
-      <label for="message">Message to Joyce:</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-
-      <button type="submit" class="btn">Submit RSVP</button>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+  
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" max="5" required>
+  
+      <label for="dietary">Dietary Restrictions</label>
+      <textarea id="dietary" name="dietary" rows="3"></textarea>
+  
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
   </section>
+  
+  
 
   <!-- Footer -->
   <footer>

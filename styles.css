@@ -33,10 +33,12 @@ h1, h2, p {
 
 .hero h1 {
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+    font-size: 2 rem; 
 }
 
 .hero p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem; 
 }
 
 .btn {
@@ -79,8 +81,9 @@ h1, h2, p {
 }
 
 .details-content p {
-    font-size: 1.2rem;
+    font-size: 3 rem; /* Increase the font size */
     margin-bottom: 10px;
+    color: black; /* Adjust color if needed */
 }
 
 /* Carousel Section with 3D Effect */
@@ -158,20 +161,49 @@ h1, h2, p {
 }
 
 /* RSVP Form Section */
+/* RSVP Form Section */
+/* Centering and styling the form elements */
 .rsvp {
-    padding: 50px;
-    background-color: #f1f1f1;
+    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover; /* Background image for the RSVP section */
+    padding: 150px 0; /* Lengthen the section */
+    position: relative;
+    z-index: 1;
+}
+
+.rsvp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   /* Dark overlay for better contrast */
+    z-index: -1;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 40px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+form h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 label {
     display: block;
     margin-top: 20px;
     font-weight: bold;
+    color: white; /* To contrast against the background */
 }
 
 input, textarea {
@@ -180,30 +212,37 @@ input, textarea {
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    backdrop-filter: blur(5px); /* Blur effect on the inputs */
 }
 
-button[type="submit"] {
-    margin-top: 20px;
+button.submit-btn {
+    display: block;
+    margin: 20px auto; /* Center the submit button */
     padding: 10px 20px;
     background-color: #f7b731;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button.submit-btn:hover {
     background-color: #e17055;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-    text-align: center;
+    background-color: #f7b731; /* Yellow background for the footer */
     padding: 20px;
-    background-color: #333;
-    color: white;
+    text-align: center;
+    color: white; /* White text for better contrast */
 }
 
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero h1 {
