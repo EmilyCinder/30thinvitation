@@ -136,7 +136,7 @@ h1, h2, p {
 /* Carousel Section with 3D Effect */
 .carousel-section {
     background-color: #9b59b6;
-    padding: 100px 0;
+    padding: 200px 0; /* Increase padding to create more space */
     text-align: center;
     position: relative;
     overflow: hidden; /* Prevent overlap */
@@ -220,7 +220,7 @@ h1, h2, p {
     }
 
     .carousel-section {
-        padding: 100px 0; /* Reduce padding for smaller screens */
+        padding: 150px 0; /* Reduce padding for smaller screens */
     }
 }
 
@@ -236,7 +236,7 @@ h1, h2, p {
     }
 
     .carousel-section {
-        padding: 50px 0; /* Further reduce padding for mobile */
+        padding: 100px 0; /* Reduce padding for mobile but still enough space */
     }
 }
 
