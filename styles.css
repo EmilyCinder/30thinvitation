@@ -14,37 +14,62 @@ h1, h2, p {
 /* Hero Section */
 .hero {
     background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
     text-align: center;
+    padding: 25px 0; /* Reduced padding for hero section */
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.5); /* Increased opacity for less transparency */
+    background: rgba(255, 255, 255, 0.5); /* Glassmorphism effect */
     border-radius: 15px;
-    padding: 20px 40px;
+    padding: 15px 5px;
     backdrop-filter: blur(10px); /* Frosted glass blur effect */
-     /* Soft shadow for depth */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
     text-align: center;
+    width: 80%; /* Set width to 80% by default */
+    max-width: 800px; /* Prevent hero-content from getting too wide on larger screens */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-content {
+        width: 70%; /* Show more background on the sides */
+        padding: 15px 20px; /* Reduce padding for smaller screens */
+        height: 70%;
+    }
+form {
+    width: 70%; /* Show more background on the sides */
+    padding: 15px 20px; 
+    height: 70%;
+}
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        width: 90%; /* Keep hero-content smaller on mobile */
+        padding: 10px 15px; /* Further reduce padding for mobile */
+    }
+
+    .hero {
+        padding: 10px 0; /* Reduce padding for the hero section on mobile */
+    }
 }
 
 .hero h1 {
-    
     font-size: 2rem; /* Fix the rem unit */
 }
 
 .hero p {
-    
     font-size: 1.5rem; /* Fix the rem unit */
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px 20px;
     background-color: #f7b731;
     color: rgb(0, 0, 0);
@@ -59,38 +84,53 @@ h1, h2, p {
 }
 
 /* Event Details Section */
+/* Event Details Section */
 .details {
     background-color: #f7b731;
-    padding: 50px;
-    text-align: center;
+    padding: 75px;
+    text-align: left; /* Align text to the left */
+    display: flex; /* Use flexbox to align content */
+    justify-content: space-evenly; /* Space between the event details and image */
+    align-items: center;
 }
 
 .details-content {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px 40px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    max-width: 600px;
+    max-width: 50%; /* Ensure event details only take up 50% of the width */
+    margin-left: 100px; /* Adjust this value to move it more to the right */
 }
 
-.details-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.details-image {
+    max-width: 50%; /* Adjust image width */
+    margin-left: auto; /* Push the image further to the right */
 }
 
-.details-content p {
-    font-size: 1.5rem; /* Adjusted font size for consistency */
-    margin-bottom: 10px;
-    color: black; /* Adjust color if needed */
+.details-image img {
+    width: 95%; /* Make the image responsive */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
 }
+
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column; /* Stack details and image vertically on smaller screens */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .details-content, .details-image {
+        max-width: 100%; /* Make both elements take full width */
+        margin: 0; /* Remove any margin */
+    }
+
+    .details-image {
+        margin-top: 20px; /* Add space between text and image */
+    }
+}
+
 
 /* Carousel Section with 3D Effect */
 .carousel-section {
     background-color: #9b59b6;
-    padding: 200px 0;
+    padding: 100px 0;
     text-align: center;
     position: relative;
 }
@@ -221,7 +261,7 @@ button.submit-btn:hover {
 
 /* Footer Section */
 footer {
-    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;  /* Yellow background for the footer */
+    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;  /* Background for the footer */
     padding: 60px;
     text-align: center;
     color: white; /* White text for better contrast */
@@ -230,45 +270,4 @@ footer {
 footer p {
     margin: 0;
     font-size: 1rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .wrapper {
-        width: 250px;
-        height: 160px;
-    }
-
-    .slide {
-        width: 250px;
-        height: 160px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        height: 80vh;
-    }
-
-    .btn {
-        font-size: 0.9rem;
-    }
-
-    .wrapper {
-        width: 100%;
-        height: 150px;
-    }
-
-    .slide {
-        width: 100%;
-        height: 150px;
-    }
 }
