@@ -13,7 +13,7 @@ h1, h2, p {
 
 /* Hero Section */
 .hero {
-    background: url('images/birdiesbackgroundfor30tht.pngs') no-repeat center center/cover;
+    background: url('images/birdiesbackgroundfor30tht.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
