@@ -20,20 +20,29 @@ h1, h2, p {
     align-items: center;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 25px 0; /* Reduced padding for hero section */
+    padding: 25px 0;
 }
 
+/* Hero Content with Black Box behind Title */
 .hero-content {
-    background: rgba(255, 255, 255, 0.5); /* Glassmorphism effect */
-    border-radius: 15px;
-    padding: 15px 5px;
-    backdrop-filter: blur(10px); /* Frosted glass blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+    
+    padding: 15px 10px; /* Padding inside the container */
     text-align: center;
-    width: 80%; /* Set width to 80% by default */
-    max-width: 800px; /* Prevent hero-content from getting too wide on larger screens */
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0); /* No background */
 }
 
+/* Hero h1 Styling with Black Box */
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f7b731; /* Yellow text */
+    background-color: black; /* Black background behind the text */
+    display: inline-block; /* Ensures the black box only wraps around the text */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Optional: Rounded corners for the box */
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero-content {
