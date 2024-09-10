@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyce's 30th Birthday Invite</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Landing Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>You've Unlocked Joyce's 30th Birthday Invitation!</h1>
+      <p>Welcome to Joyce's Exclusive Party in Vegas!</p>
+      <a href="#rsvp" class="btn">RSVP Now</a>
+    </div>
+  </section>
+
+  <!-- Event Details Section -->
+  <section class="details">
+    <h2>Event Details</h2>
+    <p><strong>Date:</strong> June 1st, 2025</p>
+    <p><strong>Time:</strong> 7:00 PM</p>
+    <p><strong>Venue:</strong> The Cosmopolitan, Las Vegas</p>
+    <p><strong>Dress Code:</strong> Flirty and Fun Attire</p>
+  </section>
+   
+  <section class="carousel-section">
+    <div class="wrapper">
+      <div class="carousel">
+        <div class="slide p1"><img src="images/b1.webp" alt="Party image 1"></div>
+        <div class="slide p2"><img src="images/b2.webp" alt="Party image 2"></div>
+        <div class="slide p3"><img src="images/b3.webp" alt="Party image 3"></div>
+        <div class="slide p4"><img src="images/b4.webp" alt="Party image 4"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+  <!-- RSVP Form Section -->
+  <section id="rsvp" class="rsvp">
+    <h2>RSVP</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" required>
+
+      <label for="diet">Dietary Restrictions:</label>
+      <input type="text" id="diet" name="diet">
+
+      <label for="message">Message to Joyce:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn">Submit RSVP</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright 2024 &copy; Joyce's 30th Birthday Party</p>
+  </footer>
+
+</body>
+</html>

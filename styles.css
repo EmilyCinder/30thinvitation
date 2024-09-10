@@ -1,0 +1,246 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, p {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/vegas.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero h1 {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+.hero p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f7b731;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e17055;
+}
+
+/* Event Details Section */
+.details {
+    background-color: #f7b731;
+    padding: 50px;
+    text-align: center;
+}
+
+.details-content {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.details-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.details-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Carousel Section with 3D Effect */
+.carousel-section {
+    background-color: #9b59b6;
+    padding: 125px 0;
+    text-align: center;
+    position: relative;
+}
+
+.wrapper {
+    width: 300px; /* Smaller width to fit in the section */
+    height: 200px; /* Smaller height */
+    perspective: 800px;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rot 10s ease-out infinite;
+}
+
+.slide {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 4 Slides Only */
+.p1 {
+    transform: rotateY(0deg) translateZ(150px);
+}
+.p2 {
+    transform: rotateY(90deg) translateZ(150px);
+}
+.p3 {
+    transform: rotateY(180deg) translateZ(150px);
+}
+.p4 {
+    transform: rotateY(270deg) translateZ(150px);
+}
+
+@keyframes rot {
+    from,
+    25% {
+        transform: rotateY(0deg);
+    }
+    30%,
+    50% {
+        transform: rotateY(-90deg);
+    }
+    55%,
+    75% {
+        transform: rotateY(-180deg);
+    }
+    80%,
+    100% {
+        transform: rotateY(-270deg);
+    }
+}
+
+/* RSVP Form Section */
+.rsvp {
+    padding: 50px;
+    background-color: #f1f1f1;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f7b731;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e17055;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        width: 250px;
+        height: 160px;
+    }
+
+    .slide {
+        width: 250px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 150px;
+    }
+
+    .slide {
+        width: 100%;
+        height: 150px;
+    }
+}
