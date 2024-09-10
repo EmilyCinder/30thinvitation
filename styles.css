@@ -41,11 +41,12 @@ h1, h2, p {
         padding: 15px 20px; /* Reduce padding for smaller screens */
         height: 70%;
     }
-form {
-    width: 70%; /* Show more background on the sides */
-    padding: 15px 20px; 
-    height: 70%;
-}
+
+    form {
+        width: 70%; /* Show more background on the sides */
+        padding: 15px 20px; 
+        height: 70%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -138,6 +139,7 @@ form {
     padding: 100px 0;
     text-align: center;
     position: relative;
+    overflow: hidden; /* Prevent overlap */
 }
 
 .wrapper {
